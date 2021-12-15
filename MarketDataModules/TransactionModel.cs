@@ -18,6 +18,8 @@ namespace MarketDataModules.Models
         public string Figi { get; set; }
         public decimal Price { get; set; }
         public TradingOperationType TradeOperation { get; set; }
+        void x()
+        { }
 
     }
     public enum TradeTarget
