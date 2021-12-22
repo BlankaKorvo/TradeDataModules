@@ -8,5 +8,8 @@ namespace MarketDataModules.Candles
 {
     interface ICandlesList
     {
+        public string Figi { get; }
+        public CandleInterval Interval { get; }
+        public List<CandleStructure> Candles { get; }
     }
 }
