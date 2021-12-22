@@ -3,7 +3,7 @@ using MarketDataModules.Portfolio;
 using System.Collections.Generic;
 
 
-namespace MarketDataModules.Models.Portfolio
+namespace MarketDataModules.Portfolio
 {
     public class Portfolio
     {
