@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 
-namespace MarketDataModules.Models.Orderbooks
+namespace MarketDataModules.Orderbooks
 {
     interface IOrderbook
     {     

@@ -1,11 +1,11 @@
-﻿using MarketDataModules.Models.Trading;
+﻿using MarketDataModules.Trading;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketDataModules.Models
+namespace MarketDataModules
 {
     public class TransactionModel : TransactionModelBase
     {

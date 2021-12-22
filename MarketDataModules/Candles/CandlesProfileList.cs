@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketDataModules.Models.Candles
+namespace MarketDataModules.Candles
 {
     public class CandlesProfileList : CandlesList
     {

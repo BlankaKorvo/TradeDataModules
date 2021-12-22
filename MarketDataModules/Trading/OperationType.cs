@@ -1,4 +1,4 @@
-namespace MarketDataModules.Models.Trading
+namespace MarketDataModules.Trading
 {
     public enum TradingOperationType
     {

@@ -1,9 +1,7 @@
-﻿using MarketDataModules.Models.Instruments;
-using System;
+﻿using MarketDataModules.Instruments;
+using MarketDataModules.Portfolio;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MarketDataModules.Models.Portfolio
 {

@@ -1,12 +1,12 @@
-using MarketDataModules.Models.Candles;
-using MarketDataModules.Models.Instruments;
-using MarketDataModules.Models.Portfolio;
+using MarketDataModules.Candles;
+using MarketDataModules.Instruments;
+using MarketDataModules.Portfolio;
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 
-namespace MarketDataModules.Models.Operation
+namespace MarketDataModules.Operation
 {
     public class TradeOperation
     {

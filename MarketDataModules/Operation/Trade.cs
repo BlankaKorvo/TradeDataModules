@@ -1,7 +1,7 @@
 using System;
 using System.Text.Json.Serialization;
 
-namespace MarketDataModules.Models.Operation
+namespace MarketDataModules.Operation
 {
     public class Trade
     {

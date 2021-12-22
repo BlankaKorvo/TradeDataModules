@@ -1,4 +1,4 @@
-namespace MarketDataModules.Models.Orderbooks
+namespace MarketDataModules.Orderbooks
 { 
     public class OrderbookEntry
     {

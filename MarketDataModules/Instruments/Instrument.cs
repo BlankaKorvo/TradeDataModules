@@ -1,6 +1,6 @@
-using MarketDataModules.Models.Candles;
+using MarketDataModules.Candles;
 
-namespace MarketDataModules.Models.Instruments
+namespace MarketDataModules.Instruments
 {
     public class Instrument
     {

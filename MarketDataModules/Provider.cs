@@ -1,4 +1,4 @@
-﻿namespace MarketDataModules.Models
+﻿namespace MarketDataModules
 {
     public enum Provider
     {

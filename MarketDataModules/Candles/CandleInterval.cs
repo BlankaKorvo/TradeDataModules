@@ -1,4 +1,4 @@
-namespace MarketDataModules.Models.Candles
+namespace MarketDataModules.Candles
 {
     public enum CandleInterval
     {

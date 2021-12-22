@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MarketDataModules.Models.Instruments
+namespace MarketDataModules.Instruments
 {
     public class InstrumentList
     {

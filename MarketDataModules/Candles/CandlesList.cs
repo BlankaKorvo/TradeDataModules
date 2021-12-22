@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace MarketDataModules.Models.Candles
+namespace MarketDataModules.Candles
 {
-    public class CandlesList
+    public class CandlesList : ICandlesList
     {
         public string Figi { get; }
         public CandleInterval Interval { get; }
