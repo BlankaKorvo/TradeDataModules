@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketDataModules.Candles
 {
-    interface ICandlesList
+    public interface ICandlesList
     {
         public string Figi { get; }
         public CandleInterval Interval { get; }
