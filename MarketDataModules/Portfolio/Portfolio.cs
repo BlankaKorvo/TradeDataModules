@@ -1,11 +1,10 @@
 ﻿using MarketDataModules.Instruments;
-using MarketDataModules.Portfolio;
 using System.Collections.Generic;
 
 
 namespace MarketDataModules.Portfolio
 {
-    public class Portfolio
+    public class Portfolio : IPortfolio
     {
         public List<Position> Positions { get; }
         public Portfolio(List<Position> positions)
@@ -13,7 +12,7 @@ namespace MarketDataModules.Portfolio
             Positions = positions;
         }
 
-        public class Position
+        public class Position : IPortfolio.IPosition
         {
             public string Name { get; }
             public string Figi { get; }

@@ -5,4 +5,12 @@ namespace MarketDataModules.Trading
         Buy,
         Sell
     }
+    public enum TradeTarget
+    {
+        notTrading,
+        toLong,
+        fromLong,
+        toShort,
+        fromShort
+    }
 }

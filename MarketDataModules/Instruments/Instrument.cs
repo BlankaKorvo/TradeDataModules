@@ -2,7 +2,7 @@ using MarketDataModules.Candles;
 
 namespace MarketDataModules.Instruments
 {
-    public class Instrument
+    public class Instrument : IInstrument
     {
         public string Figi { get; }
         public string Ticker { get; }
