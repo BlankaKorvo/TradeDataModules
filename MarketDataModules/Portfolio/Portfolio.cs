@@ -1,7 +1,6 @@
 ﻿using MarketDataModules.Instruments;
 using System.Collections.Generic;
 
-
 namespace MarketDataModules.Portfolio
 {
     public class Portfolio : IPortfolio

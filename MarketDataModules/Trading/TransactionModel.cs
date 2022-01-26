@@ -1,5 +1,4 @@
-﻿
-namespace MarketDataModules.Trading
+﻿namespace MarketDataModules.Trading
 {
     public class TransactionModel : TransactionModelBase
     {
