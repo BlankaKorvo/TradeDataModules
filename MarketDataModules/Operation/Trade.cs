@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace MarketDataModules.Operation
 {
-    public class Trade
+    public record struct Trade
     {
         public string TradeId { get; }
         public DateTime Date { get; }

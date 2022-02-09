@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace MarketDataModules.Candles
 {
-    public class CandlesList : ICandlesList
+    public record struct CandlesList : ICandlesList
     {
         public string Figi { get; }
         public CandleInterval Interval { get; }

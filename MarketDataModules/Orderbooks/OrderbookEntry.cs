@@ -1,6 +1,6 @@
 namespace MarketDataModules.Orderbooks
 { 
-    public class OrderbookEntry
+    public record struct OrderbookEntry
     {
         public int Quantity { get; }
         public decimal Price { get; }

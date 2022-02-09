@@ -2,7 +2,7 @@
 
 namespace MarketDataModules.Portfolio
 {
-    public class MoneyAmount
+    public record struct MoneyAmount
     {
         public Currency Currency { get; }
         public decimal Value { get; }
