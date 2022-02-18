@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace MarketDataModules.Orderbooks
 {
-    public record struct Orderbook : IOrderbook
+    public record Orderbook : IOrderbook
     {
         public int Depth { get; }
         public List<OrderbookEntry> Bids { get; }

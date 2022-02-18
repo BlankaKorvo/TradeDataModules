@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace MarketDataModules.Operation
 {
-    public record struct TradeOperation : ITradeOperation
+    public record TradeOperation : ITradeOperation
     {
         public string Id { get; }
         public OperationStatus Status { get; }

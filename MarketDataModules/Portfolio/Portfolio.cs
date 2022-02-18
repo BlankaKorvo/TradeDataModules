@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MarketDataModules.Portfolio
 {
-    public record struct Portfolio : IPortfolio
+    public record Portfolio : IPortfolio
     {
         public List<Position> Positions { get; }
         public Portfolio(List<Position> positions)
