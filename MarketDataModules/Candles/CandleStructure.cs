@@ -2,7 +2,7 @@ using System;
 
 namespace MarketDataModules.Candles
 {
-    public record CandleStructure : ICandleStructure, ICandleStructureMetadata
+    public record CandleStructure
     {
         public decimal Open { get; }
         public decimal Close { get; }
