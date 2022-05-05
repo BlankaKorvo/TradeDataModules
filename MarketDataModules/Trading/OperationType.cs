@@ -8,6 +8,7 @@ namespace MarketDataModules.Trading
     public enum TradeTarget
     {
         notTrading,
+        trading,
         toLong,
         fromLong,
         toShort,
