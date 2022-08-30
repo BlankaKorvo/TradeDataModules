@@ -12,6 +12,7 @@ namespace MarketDataModules.Trading
         toLong,
         fromLong,
         toShort,
-        fromShort
+        fromShort,
+        toCash        
     }
 }
