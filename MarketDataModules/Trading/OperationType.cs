@@ -9,10 +9,10 @@ namespace MarketDataModules.Trading
     {
         notTrading,
         trading,
+        stand,
         toLong,
         fromLong,
         toShort,
-        fromShort,
-        toCash        
+        fromShort     
     }
 }
