@@ -11,10 +11,14 @@ namespace MarketDataModules.Portfolio
             Positions = positions;
         }
 
-        public record struct Position //: IPortfolio.IPosition
+        public class Position //: IPortfolio.IPosition
         {
+            public Position()
+            {
+
+            }
             public string Name { get; }
-            public string Figi { get; }
+            public string Figi { get; set; }
             public string Ticker { get; }
             public string Isin { get; }
             public InstrumentType InstrumentType { get; }
