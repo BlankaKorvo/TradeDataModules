@@ -3,15 +3,15 @@ namespace MarketDataModules.Candles
     public enum CandleInterval
     {
         Minute,
-        TwoMinutes,
-        ThreeMinutes,
+        //TwoMinutes,
+        //ThreeMinutes,
         FiveMinutes,
-        TenMinutes,
+        //TenMinutes,
         QuarterHour,
-        HalfHour,
+        //HalfHour,
         Hour,
-        Day,
-        Week,
-        Month
+        Day
+        //Week,
+        //Month
     }
 }

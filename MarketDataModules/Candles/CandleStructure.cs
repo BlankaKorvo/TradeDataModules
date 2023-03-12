@@ -10,9 +10,7 @@ namespace MarketDataModules.Candles
         public decimal Low { get; }
         public decimal Volume { get; }
         public DateTime Time { get; }
-        public CandleInterval Interval { get; }
-        public string Figi { get; }
-
+        public bool IsComplete { get; } 
 
         public CandleStructure(
             decimal open,
@@ -21,8 +19,7 @@ namespace MarketDataModules.Candles
             decimal low,
             decimal volume,
             DateTime time,
-            CandleInterval interval,
-            string figi)
+            bool isComplete)
         {
             Open = open;
             Close = close;
@@ -30,22 +27,7 @@ namespace MarketDataModules.Candles
             Low = low;
             Volume = volume;
             Time = time;
-            Interval = interval;
-            Figi = figi;
-        }
-
-        public override string ToString()
-        {
-            return $"{nameof(Figi)}: {Figi}, {nameof(Interval)}: {Interval}, {nameof(Time)}: {Time}, {nameof(Open)}: {Open}, {nameof(Close)}: {Close}, {nameof(High)}: {High}, {nameof(Low)}: {Low}, {nameof(Volume)}: {Volume}";
-        }
-        public enum CandleValue
-        {
-        Open,
-        Close,
-        High,
-        Low,
-        Average,
-        Volume
+            IsComplete = isComplete;
         }
     }
 }
