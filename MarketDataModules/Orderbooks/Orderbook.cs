@@ -1,57 +1,46 @@
+using System;
 using System.Collections.Generic;
 
 namespace MarketDataModules.Orderbooks
 {
     public record Orderbook// : IOrderbook
     {
+        public string Id { get; set; }
         public int Depth { get; }
-        public List<OrderbookEntry> Bids { get; }
-        public List<OrderbookEntry> Asks { get; }
-        public string Figi { get; }
-        public TradeStatus TradeStatus { get; }
-        /// <summary>
-        /// Шаг цены
-        /// </summary>
-        public decimal MinPriceIncrement { get; }
-        /// <summary>
-        /// Номинал для облигаций
-        /// </summary>
-        public decimal FaceValue { get; }
+        public List<Order> Bids { get; }
+        public List<Order> Asks { get; }
         public decimal LastPrice { get; }
         public decimal ClosePrice { get; }
-        /// <summary>
-        /// Верхняя граница цены
-        /// </summary>
         public decimal LimitUp { get; }
-        /// <summary>
-        /// Нижняя граница цены
-        /// </summary>
         public decimal LimitDown { get; }
+        public DateTime LastPriceTime { get; }
+        public DateTime ClosePriceTime { get; }
+        public DateTime? OrderbookTime { get; }
 
         public Orderbook(
+            string id,
             int depth,
-            List<OrderbookEntry> bids,
-            List<OrderbookEntry> asks,
-            string figi,
-            TradeStatus tradeStatus,
-            decimal minPriceIncrement,
-            decimal faceValue,
+            List<Order> bids,
+            List<Order> asks,
             decimal lastPrice,
             decimal closePrice,
             decimal limitUp,
-            decimal limitDown)
+            decimal limitDown,
+            DateTime lastPriceTime,
+            DateTime closePriceTime,
+            DateTime? orderbookTime)
         {
+            Id = id;
             Depth = depth;
             Bids = bids;
             Asks = asks;
-            Figi = figi;
-            TradeStatus = tradeStatus;
-            MinPriceIncrement = minPriceIncrement;
-            FaceValue = faceValue;
             LastPrice = lastPrice;
             ClosePrice = closePrice;
             LimitUp = limitUp;
             LimitDown = limitDown;
+            LastPriceTime = lastPriceTime;
+            ClosePriceTime = closePriceTime;
+            OrderbookTime = orderbookTime;
         }
     }
 }
