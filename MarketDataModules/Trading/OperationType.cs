@@ -15,4 +15,10 @@ namespace MarketDataModules.Trading
         toShort,
         fromShort     
     }
+    public enum OperationState
+    {
+        Long,
+        Short,
+        NoState
+    }
 }
