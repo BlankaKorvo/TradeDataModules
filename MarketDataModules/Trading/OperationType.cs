@@ -1,3 +1,5 @@
+using MarketDataModules.Candles;
+
 namespace MarketDataModules.Trading
 {
     public enum TradingOperationType
@@ -13,7 +15,7 @@ namespace MarketDataModules.Trading
         toLong,
         fromLong,
         toShort,
-        fromShort     
+        fromShort
     }
     public enum OperationState
     {
@@ -21,4 +23,4 @@ namespace MarketDataModules.Trading
         Short,
         NoState
     }
-}
+} 
