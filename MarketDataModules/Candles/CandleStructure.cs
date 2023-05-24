@@ -8,7 +8,7 @@ namespace MarketDataModules.Candles
         public decimal Close { get; }
         public decimal High { get; }
         public decimal Low { get; }
-        public decimal Volume { get; }
+        public long Volume { get; }
         public DateTime Time { get; }
         public bool IsComplete { get; } 
 
@@ -17,7 +17,7 @@ namespace MarketDataModules.Candles
             decimal close,
             decimal high,
             decimal low,
-            decimal volume,
+            long volume,
             DateTime time,
             bool isComplete)
         {
