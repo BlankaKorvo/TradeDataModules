@@ -42,7 +42,7 @@ namespace MarketDataModules.Portfolio
         /// <summary>
         /// Gets or Sets Positions
         /// </summary>
-        public List<PortfolioPositions> Positions { get; set; }
+        public List<PortfolioPositionList> Positions { get; set; }
 
         /// <summary>
         /// Gets or Sets AccountId
@@ -67,7 +67,7 @@ namespace MarketDataModules.Portfolio
         /// <summary>
         /// Gets or Sets VirtualPositions
         /// </summary>
-        public List<PortfolioPositions> VirtualPositions { get; set; }
+        public List<PortfolioPositionList> VirtualPositions { get; set; }
 
 
         /// <summary>

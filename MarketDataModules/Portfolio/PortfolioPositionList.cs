@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace MarketDataModules.Portfolio
 {
-    public class PortfolioPositions
+    public class PortfolioPositionList
     {
         /// <summary>
         /// Gets or Sets Figi
