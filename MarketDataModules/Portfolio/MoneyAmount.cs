@@ -5,7 +5,7 @@ namespace MarketDataModules.Portfolio
     public record MoneyAmount
     {
         public Currency Currency { get; }
-        public decimal Value { get; }
+        public decimal Value { get; set; }
 
         /// <summary>
         /// Стоимость в валюте
