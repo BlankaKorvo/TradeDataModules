@@ -2,43 +2,20 @@ using MarketDataModules.Candles;
 
 namespace MarketDataModules.Instruments
 {
-    public record Instrument : IInstrument
+    public record Instrument
     {
-        public string Figi { get; }
-        public string Ticker { get; }
-        public string Isin { get; }
-        /// <summary>
-        /// Шаг цены
-        /// </summary>
-        public decimal MinPriceIncrement { get; }
-        public int Lot { get; }
-        public Currency Currency { get; }
-        public string Name { get; }
-        public InstrumentType Type { get; }
-
-        public Instrument(
-            string figi,
-            string ticker,
-            string isin,
-            decimal minPriceIncrement,
-            int lot,
-            Currency currency,
-            string name,
-            InstrumentType type)
-        {
-            Figi = figi;
-            Ticker = ticker;
-            Isin = isin;
-            MinPriceIncrement = minPriceIncrement;
-            Lot = lot;
-            Currency = currency;
-            Name = name;
-            Type = type;
-        }
-
-        public override string ToString()
-        {
-            return $"{nameof(Figi)}: {Figi}, {nameof(Ticker)}: {Ticker}, {nameof(Isin)}: {Isin}, {nameof(MinPriceIncrement)}: {MinPriceIncrement}, {nameof(Lot)}: {Lot}, {nameof(Currency)}: {Currency}, {nameof(Name)}: {Name}, {nameof(Type)}: {Type}";
-        }
+        public string Figi { get; set; }
+        public string Ticker { get; set; }
+        public string Isin { get; set; }
+        public string TinkoffUid { get; set; }
+        public string ClassCode { get; set; }
+        //public decimal? MinPriceIncrement { get; set; }
+        public int Lot { get; set; }
+        public Currency Currency { get; set; }
+        public string Name { get; set; }
+        public InstrumentType Type { get; set; }
+        public bool ShortEnabledFlag { get; set; }
+        public string Exchange {  get; set; }
+        public string RealExchange { get; set; }
     }
 }
