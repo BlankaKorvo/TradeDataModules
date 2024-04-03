@@ -2,15 +2,11 @@ using System.Collections.Generic;
 
 namespace MarketDataModules.Instruments
 {
-    public record InstrumentList : IInstrumentList
+    public record InstrumentList
     {
-        public int Total { get; }
-        public List<Instrument> Instruments { get; }
+        public int Count { get; set; }
+        public List<Instrument> Instruments { get; set; }
 
-        public InstrumentList(int total, List<Instrument> instruments)
-        {
-            Total = total;
-            Instruments = instruments;
-        }
+
     }
 }
