@@ -14,7 +14,7 @@ namespace MarketDataModules.Portfolio
         /// <summary>
         /// Gets or Sets Figi
         /// </summary>
-        public string Figi { get; set; }
+        public string SecurityCode { get; set; }
 
         /// <summary>
         /// Gets or Sets InstrumentType
